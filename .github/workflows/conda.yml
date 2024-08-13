@@ -24,5 +24,8 @@ jobs:
         conda env update --file environment.yml --name myenv
         conda activate myenv
 
-    - name: Run Python script
-      run: python script.py  
+    - name: Run Conda Info
+      run: conda info
+
+    - name: Run Conda List
+      run: conda list
